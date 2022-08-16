@@ -1,0 +1,32 @@
+name: Bundle and Publish Sources
+on:
+  push:
+    branches:
+      - '**'
+      - '!gh-pages'
+
+jobs:
+  build:
+    name: Bundle and Publish Sources
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Testing
+        run: npm run test

@@ -1,0 +1,12 @@
+# OS
+.envrc
+
+# IDE
+.vscode
+.idea
+
+# Node
+node_modules
+
+# Builds
+/bundles

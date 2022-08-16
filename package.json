@@ -1,0 +1,54 @@
+{
+  "name": "paperback-extensions",
+  "version": "1.0.0",
+  "description": "A set of Paperback extensions",
+  "author": "Nicolas Guilloux",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/NicolasGuilloux/paperback-extensions",
+  "bugs": {
+    "url": "https://github.com/NicolasGuilloux/paperback-extensions/issues"
+  },
+  "keywords": [
+    "paperback",
+    "french",
+    "sources",
+    "extensions"
+  ],
+  "scripts": {
+    "bundle": "paperback bundle",
+    "serve": "paperback serve -p 8081",
+    "test": "mocha --color --timeout 10000 --require ts-node/register src/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasGuilloux/paperback-extensions.git"
+  },
+  "dependencies": {
+    "entities": "^4.3.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "cheerio": "^0.22.0",
+    "paperback-cli": "^1.4.0",
+    "paperback-extensions-common": "^4.3.5",
+    "random-useragent": "^0.5.0",
+    "ts-mocha": "^7.0.0",
+    "tsify": "^4.0.2",
+    "typescript": "^4.3.2",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/chai-as-promised": "^7.1.4",
+    "@types/cheerio": "0.22.21",
+    "@types/mocha": "^9.0.0",
+    "@types/random-useragent": "^0.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.18.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.2.0",
+    "mocha": "^9.1.1",
+    "nyc": "^15.1.0",
+    "typedoc": "^0.17.6"
+  }
+}

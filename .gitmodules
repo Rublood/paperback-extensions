@@ -1,0 +1,4 @@
+[submodule "src/lib/TheNetsky/extensions-generic"]
+	path = src/lib/TheNetsky/extensions-generic
+	url = https://github.com/TheNetsky/extensions-generic.git
+	branch = madara
