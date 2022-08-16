@@ -1,8 +1,8 @@
-WARNING: This is a work in progress and currently at the very first stages.
-
 == Paperback Extensions
 
 This repository hosts a set of Paperback extensions for French people.
+
+image:https://shields.io/badge/Add%20to%20Paperback-blue?style=for-the-badge[alt="Add To Paperback",link="paperback://addRepo?displayName=NoverExtensions&url=https%3A%2F%2Fnicolasguilloux.github.io%2Fpaperback-extensions"]
 
 === Available sources
 

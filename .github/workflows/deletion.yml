@@ -3,7 +3,8 @@ on:
   delete:
     branches:
       - '**'
-      - '!main'
+      - '!gh-pages'
+
 jobs:
   delete:
     if: github.event.ref_type == 'branch'

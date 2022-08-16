@@ -25,11 +25,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Extract branch name
-        shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        id: extract_branch
-
       - name: Checkout existing bundles
         uses: actions/checkout@v2
         continue-on-error: true
@@ -38,7 +33,7 @@ jobs:
           path: bundles
 
       - run: npm install
-      - run: npm run bundle -- --folder=${{ steps.extract_branch.outputs.branch }}
+      - run: npm run bundle
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
