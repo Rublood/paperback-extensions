@@ -1,7 +1,8 @@
 {
   "name": "paperback-extensions",
   "version": "1.0.0",
-  "description": "A set of Paperback extensions",
+  "repositoryName": "Nover's Paperback Extensions",
+  "description": "A set of Paperback extensions for French people",
   "author": "Nicolas Guilloux",
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/NicolasGuilloux/paperback-extensions",
