@@ -37,7 +37,6 @@ export class MangaOrigines extends Madara {
     languageCode: LanguageCode = LanguageCode.FRENCH;
     override readonly parser: MangaOriginesParser = new MangaOriginesParser();
 
-    override sourceTraversalPathName = 'catalogues';
     override hasAdvancedSearchPage = true
     override searchPagePathName = '';
     override alternativeChapterAjaxEndpoint = true
