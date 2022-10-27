@@ -38,6 +38,6 @@ export class MangaOrigines extends Madara {
     override readonly parser: MangaOriginesParser = new MangaOriginesParser();
 
     override hasAdvancedSearchPage = true
-    // override alternativeChapterAjaxEndpoint = true
+    override alternativeChapterAjaxEndpoint = true
 
 }
