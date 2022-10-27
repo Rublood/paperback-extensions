@@ -19429,7 +19429,7 @@ class MangaOrigines extends Madara_1.Madara {
         this.languageCode = paperback_extensions_common_1.LanguageCode.FRENCH;
         this.parser = new MangaOriginesParser_1.MangaOriginesParser();
         this.hasAdvancedSearchPage = true;
-        // override alternativeChapterAjaxEndpoint = true
+        this.alternativeChapterAjaxEndpoint = true;
     }
 }
 exports.MangaOrigines = MangaOrigines;
